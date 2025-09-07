@@ -5,14 +5,14 @@ import { About } from '../components/About';
 import { Skills } from '../components/Skills';
 import { Projects } from '../components/Projects';
 import { Experience } from '../components/Experience';
-import { Testimonials } from '../components/Testimonials';
+
 import { Contact } from '../components/Contact';
 import { Footer } from '../components/Footer';
 import { useScrollSpy } from '../hooks/useScrollSpy';
 import { useScrollAnimations } from '../hooks/useScrollAnimations';
 
 export const Portfolio: React.FC = () => {
-  const sectionIds = ['home', 'about', 'skills', 'projects', 'experience', 'testimonials', 'contact'];
+  const sectionIds = ['home', 'about', 'skills', 'projects', 'experience', 'contact'];
   const activeSection = useScrollSpy(sectionIds, 80);
   
   // Initialize scroll animations
@@ -37,7 +37,7 @@ export const Portfolio: React.FC = () => {
         <Skills />
         <Projects />
         <Experience />
-        <Testimonials />
+        
         <Contact />
       </main>
       
